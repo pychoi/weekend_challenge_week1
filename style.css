@@ -1,0 +1,41 @@
+h1 {
+	text-align: center;
+}
+
+#employeeinfo {
+	text-align: center;
+}
+
+input {
+	display:block;
+	margin-bottom: 10px;
+}
+
+.formformat {
+	display:inline-block;
+	margin-right: 30px;
+}
+
+input[type=submit] {
+	margin: 10px auto;
+	font-size: 16px;
+}
+
+#container {
+	margin: 50px 80px;
+}
+
+.employee {
+	display: inline-block;
+	margin: 20px 10px 0 10px;
+}
+
+.employee p {
+	margin: 5px 0;
+}
+
+#costheadline {
+	font-size: 24px;
+	text-align: center;
+	font-weight: normal;
+}
