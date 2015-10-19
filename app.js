@@ -57,6 +57,9 @@ function calculateMonthlySalaryTotal(array){
 //Hard and Pro Modes!!!
 //Remove employee from DOM by clicking "Delete Employee" button
 //Calculate and update the total monthly salary cost when an employee is deleted
+
+//code below is for targeting the employee clicked in the employeeArray and 
+//deleting that employee information from the array.
 function deleteEmployee(){
 	$("#container").on("click", ".deleteemployee", function(){
 		$(this).parent().remove();
@@ -78,7 +81,7 @@ function deleteEmployee(){
 
 		//Calculate the monthly cost after an employee is deleted and
 		//store result in variable costAfterDelete
-		var costAfterDelete = costBeforeDelete - (parseInt(salary)/12);
+		var costAfterDelete = Math.abs(costBeforeDelete - (parseInt(salary)/12));
 		
 		//Update the DOM with the new monthly salary cost after an employee is deleted
 		$("span").replaceWith("<span>" + costAfterDelete.toFixed(2) + "</span>");
